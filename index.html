@@ -64,7 +64,7 @@ show: 1
 
 <h2>Latest News</h2>
 <ul>
-  {% for post in site.posts limit: 4%}
+  {% for post in site.posts limit: 3%}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
       <p>{{ post.excerpt | strip_html }}</p> <!-- This displays the post excerpt -->
@@ -73,3 +73,15 @@ show: 1
 </ul>
 
 <a href="/news.html">See all news →</a>
+
+
+<h2>Selected Publications</h2>
+<ul>
+  {% for paper in site.papers limit: 3%}
+    <li>
+      
+    </li>
+  {% endfor %}
+</ul>
+
+<a href="/papers.html">See all publications →</a>
