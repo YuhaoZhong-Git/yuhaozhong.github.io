@@ -12,11 +12,45 @@ description:  # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yuhao-zhong.com/" # the base hostname & protocol for your site
 
-# Ensure Jekyll is allowed to process categories
-collections:
-  posts:
-    output: true
-
 # Build settings
 markdown: kramdown
 highlighter: rouge
+
+paginate: 5 # number of posts per page in pagination
+paginate_path: "/page:num/"
+
+# Collections
+collections:
+  posts:
+    output: true # Enables posts to be rendered into _site folder
+
+# Permalinks for posts
+permalink: /:year/:month/:day/:title/
+
+# Defaults for posts
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Author Name"
+      category: "default-category"
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-feed
+
+# Exclude these files and folders from build process
+exclude:
+  - "README.md"
+  - "Gemfile"
+  - "Gemfile.lock"
+
+# Options for kramdown Markdown processor
+kramdown:
+  input: GFM # GitHub-flavored Markdown
+  syntax_highlighter_opts:
+    block:
+      line_numbers: true
