@@ -24,6 +24,11 @@ collections:
   posts:
     output: true # Enables posts to be rendered into _site folder
 
+collections:
+  papers:
+    output: true
+    permalink: /:collection/:path/
+
 # Permalinks for posts
 permalink: /:year/:month/:day/:title/
 
