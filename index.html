@@ -42,7 +42,7 @@ show: 1
 </p> -->
 
 
-<h3> Current Research Areas </h3>
+<h2> Current Research Areas </h2>
 <p style="font-size: 18px">
 <ul style="font-size: 18px">
   <li> Advancement of explainable AI and generative AI methods </li>
@@ -52,7 +52,7 @@ show: 1
 </ul>
 </p>
 
-<h3> Recognition </h3>
+<h2> Recognition </h2>
 <p style="font-size: 18px">
 <ul style="font-size: 18px">
   <li> <a href = "https://grad.tamu.edu/aggie-life/news/texas-a-m-announces-the-2024-u-s-senator-phil-gramm-doctoral-fellowship-award-winners">2024 U.S. Senator Phil Gramm Doctoral Fellowship</a> </li>
@@ -61,3 +61,12 @@ show: 1
   <li> <a href = "https://www.iise.org/Details.aspx?id=17500">2023 Winner of the IISE Data Analytics & Information Systems (DAIS) Student Best Paper Contest</a> </li>
 </ul>
 </p>
+
+<h2>Latest News</h2>
+<ul>
+  {% for post in site.posts %}
+    <li>
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+    </li>
+  {% endfor %}
+</ul>
