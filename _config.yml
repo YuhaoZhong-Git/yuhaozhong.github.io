@@ -16,31 +16,29 @@ url: "http://yuhao-zhong.com" # the base hostname & protocol for your site
 markdown: kramdown
 highlighter: rouge
 
-paginate: 5 # number of posts per page in pagination
-paginate_path: "/page:num/"
 
 # Collections
 collections:
   posts:
     output: true # Enables posts to be rendered into _site folder
+    permalink: /:year/:month/:day/:title/ # URL structure for posts
 
 collections:
   papers:
     output: true
     permalink: /:collection/:path/
 
-# Permalinks for posts
-permalink: /:year/:month/:day/:title/
+permalink: /:categories/:title/
 
-# Defaults for posts
-defaults:
-  - scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      author: "Author Name"
-      category: "default-category"
+# # Defaults for posts
+# defaults:
+#   - scope:
+#       path: ""
+#       type: "posts"
+#     values:
+#       layout: "post"
+#       author: "Author Name"
+#       category: "default-category"
 
 # Plugins
 plugins:
