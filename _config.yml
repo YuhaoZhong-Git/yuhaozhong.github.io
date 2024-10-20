@@ -28,32 +28,11 @@ collections:
     output: true
     permalink: /:collection/:path/
 
+collections:
+  courses:
+    output: true
+    permalink: /courses/:title/
+
 permalink: /:categories/:title/
 
-# # Defaults for posts
-# defaults:
-#   - scope:
-#       path: ""
-#       type: "posts"
-#     values:
-#       layout: "post"
-#       author: "Author Name"
-#       category: "default-category"
 
-# Plugins
-plugins:
-  - jekyll-paginate
-  - jekyll-feed
-
-# Exclude these files and folders from build process
-exclude:
-  - "README.md"
-  - "Gemfile"
-  - "Gemfile.lock"
-
-# Options for kramdown Markdown processor
-kramdown:
-  input: GFM # GitHub-flavored Markdown
-  syntax_highlighter_opts:
-    block:
-      line_numbers: true
