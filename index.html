@@ -112,10 +112,11 @@ show: 1
 <ul>
   {% for paper in site.papers limit: 3 %}
     <li>
-      <h3><a href = {{ paper.url }}>{{ paper.title }}</a></h3>
+      <h3><a href = "{{ paper.url }}">{{ paper.title }}</a></h3>
       <p><strong>Authors:</strong> {{ paper.authors }}</p>
       <p><strong>Year:</strong> {{ paper.year }}</p>
       <p><strong> In:</strong> {{ paper.journal }}</p>
+      <p><strong>tldr:</strong>{{ paper.tldr}}</p>
       {% if paper.images %}
         <div class="paper-images">
           {% for image in paper.images %}
@@ -123,10 +124,6 @@ show: 1
           {% endfor %}
         </div>
       {% endif %}
-      {% if paper.doi %}
-        <p><a href="{{ paper.doi }}" target="_blank">DOI Link</a></p>
-      {% endif %}
-      <p><strong>tldr:</strong>{{ paper.tldr}}</p>
     </li>
   {% endfor %}
 </ul>
