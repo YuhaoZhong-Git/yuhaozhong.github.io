@@ -1,4 +1,5 @@
 ---
+categories: papers
 title: "EBLIME: Enhanced Bayesian Local Interpretable Model-agnostic Explanations"
 authors: "Yuhao Zhong, Anirban Bhattacharya, Satish Bukkapatnam"
 journal: "arxiv preprint"

@@ -1,4 +1,5 @@
 ---
+categories: papers
 title: "Detecting Anomalous Robot Motion in Collaborative Robotic Manufacturing Systems"
 authors: "Yuhao Zhong, Yalun Wen, Sarah Hopko, Adithyaa Karthikeyan, Prabhakar Pagilla, Ranjana K. Mehta, and Satish T.S. Bukkapatnam "
 journal: "IEEE Internet of Things Journal"
