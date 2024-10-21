@@ -94,23 +94,26 @@ show: 1
 <a href="/news/">See all news →</a>
 
 
-<!-- <h2>Selected Publications</h2>
+<h2>Selected Publications</h2>
 <ul>
   {% for paper in site.papers limit: 3 %}
     <li>
-      <h3>{{ paper.title }}</h3>
+      <h3><a href = {{ paper.url }}>{{ paper.title }}</a></h3>
       <p><strong>Authors:</strong> {{ paper.authors }}</p>
-      <p><strong>Journal/Conference:</strong> {{ paper.journal }}</p>
       <p><strong>Year:</strong> {{ paper.year }}</p>
+      <p><strong> In </strong>:</strong> {{ paper.journal }}</p>
+      {% if paper.image %}
+        <img src="{{ paper.image }}" alt="{{ paper.title }} image" style="max-width: 200px;">
+      {% endif %}
       {% if paper.doi %}
         <p><a href="{{ paper.doi }}" target="_blank">DOI Link</a></p>
       {% endif %}
-      <p>{{ paper.description }}</p>
+      <p><strong>tldr:</strong>{{ paper.tldr}}</p>
     </li>
   {% endfor %}
-</ul> -->
+</ul>
 
-<!-- <a href="/papers/">See all publications </a> -->
+<a href="https://scholar.google.com/citations?user=RsfD6hMAAAAJ&hl=en" target="_blank" rel="noopener noreferrer">See all publications </a>
 
 </div>
 </div>
