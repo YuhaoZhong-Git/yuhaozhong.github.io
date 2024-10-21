@@ -28,7 +28,7 @@ collections:
     output: true
     permalink: /courses/:title/
 
-# permalink: /:categories/:title/
+permalink: /:categories/:title/
 
 collections:
   papers:
