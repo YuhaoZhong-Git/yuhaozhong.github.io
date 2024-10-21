@@ -102,8 +102,12 @@ show: 1
       <p><strong>Authors:</strong> {{ paper.authors }}</p>
       <p><strong>Year:</strong> {{ paper.year }}</p>
       <p><strong> In </strong>:</strong> {{ paper.journal }}</p>
-      {% if paper.image %}
-        <img src="{{ paper.image }}" alt="{{ paper.title }} image" style="max-width: 200px;">
+      {% if paper.images %}
+        <div class="paper-images">
+          {% for image in paper.images %}
+            <img src="{{ image }}" alt="{{ paper.title }} image" style="max-width: 200px; margin-right: 10px;">
+          {% endfor %}
+        </div>
       {% endif %}
       {% if paper.doi %}
         <p><a href="{{ paper.doi }}" target="_blank">DOI Link</a></p>
