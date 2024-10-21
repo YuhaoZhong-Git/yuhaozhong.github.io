@@ -26,7 +26,7 @@ collections:
 collections:
   papers:
     output: true
-    permalink: /:collection/:path/
+    permalink: /papers/:title/
 
 collections:
   courses:
