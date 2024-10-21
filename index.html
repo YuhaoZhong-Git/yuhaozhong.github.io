@@ -112,7 +112,7 @@ show: 1
 <ul>
   {% for paper in site.papers limit: 3 %}
     <li>
-      <h3><a href="{{ paper.url }}">{{ paper.title }}</a></h3>
+      <h3><a href="{{ paper.url }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a></h3>
       <p><strong>Authors:</strong> {{ paper.authors }}</p>
       <p><strong>Year:</strong> {{ paper.year }}</p>
       <p><strong> In:</strong> {{ paper.journal }}</p>
