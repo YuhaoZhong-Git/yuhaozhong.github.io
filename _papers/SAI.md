@@ -4,9 +4,12 @@ authors: "Yuhao Zhong, Yalun Wen, Sarah Hopko, Adithyaa Karthikeyan, Prabhakar P
 journal: "IEEE Internet of Things Journal"
 year: "2024"
 url: "https://ieeexplore.ieee.org/abstract/document/10339676"
-tldr: "A Bayesian regularized approach to locally explain black-box model and quantify the explanation uncertainty more accurately. It can also be applied to defect segmentation and knowledge discovery."
-abstract: "We propose EBLIME to explain black-box machine learning models and obtain the distribution of feature importance using Bayesian ridge regression models. We provide mathematical expressions of the Bayesian framework and theoretical outcomes including the significance of ridge parameter. Case studies were conducted on benchmark datasets and a real-world industrial application of locating internal defects in manufactured products. Compared to the state-of-the-art methods, EBLIME yields more intuitive and accurate results, with better uncertainty quantification in terms of deriving the posterior distribution, credible intervals, and rankings of the feature importance."
+tldr: "External IoT surveillance cameras combined with marker pose estimation and LSTM to track fast-moving robot and detect anomalous robot motion based on risks in human-robot collaborative industrial environment."
+abstract: "Anomalous robot motions caused by cyber attacks and inherent defects can lead to task failures as well as harmful accidents in collaborative human-robot workplaces. External Internet-of-Things (IoT) sensors are essential for reliably monitoring robot tool paths and detecting deviations as early as possible, especially in anomalous situations where the robot system and its internal sensors may not function as expected. However, affordable external IoT sensors may suffer from poor-quality measurements, necessitating data-driven algorithmic enhancements. In addition to external sensors providing independent monitoring, to effectively detect trajectory deviations, we need anomaly detection methods that can capture complex dynamic patterns in the nonlinear trajectory time-series data. In this work, we propose a framework to accurately estimate robot trajectories during normal robot operations as well as to detect various types of anomalous trajectory changes using an external camera. The proposed framework efficiently incorporates marker-based pose estimation, Long Short-Term Memory (LSTM), and residual control charts. The framework was evaluated in a shared human-robot assembly task. The results show that we can accurately estimate robot trajectories by enhancing camera-based measurements. Moreover, it effectively detects anomalous trajectory changes in their early stages. The motion deviation upon detection assists in determining a safe working distance. The framework is also generalizable to previously unseen trajectory deviations and allows the use of a variety of IoT sensors. "
 images: 
-  - "/paper_images/EBLIME_image1.png"
-  - "/paper_images/EBLIME_image2.png"
+  - "/paper_images/SAI/image1.png"
+  - "/paper_images/SAI/image2.png"
+  - "/paper_images/SAI/image3.png"
+  - "/paper_images/SAI/image4.png"
+  - "/paper_images/SAI/image5.png"
 ---
