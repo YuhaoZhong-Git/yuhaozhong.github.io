@@ -24,15 +24,14 @@ collections:
     permalink: /:year/:month/:day/:title/ # URL structure for posts
 
 collections:
-  papers:
-    output: true
-    permalink: /papers/:title/
-
-collections:
   courses:
     output: true
     permalink: /courses/:title/
 
 permalink: /:categories/:title/
 
+collections:
+  papers:
+    output: true
+    permalink: /papers/:title/
 
