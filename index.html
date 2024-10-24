@@ -86,7 +86,7 @@ show: 1
 <ul>
   {% for post in site.posts limit: 3%}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B, %Y" }}
       <p>{{ post.excerpt | strip_html }}</p> <!-- This displays the post excerpt -->
     </li>
   {% endfor %}
@@ -120,7 +120,7 @@ show: 1
       {% if paper.images %}
         <div class="paper-images">
           {% for image in paper.images %}
-            <img src="{{ image }}" style="max-width: 200px; margin-right: 10px;">
+            <img src="{{ image }}" style="max-width: 200px; margin-right:6px;">
           {% endfor %}
         </div>
       {% endif %}

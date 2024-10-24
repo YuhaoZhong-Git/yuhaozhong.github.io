@@ -1,0 +1,16 @@
+---
+title: "Identifying the influence of surface texture waveforms on colors of polished surfaces using an explainable AI approach"
+authors: "Yuhao Zhong, Akash Tiwari, Hitomi Yamaguchi, Akhlesh Lakhtakia, Satish T.S. Bukkapatnam"
+journal: "IISE Transactions"
+year: "2023"
+links: "https://www.tandfonline.com/doi/abs/10.1080/24725854.2022.2100050"
+tldr: "Consolidating LIME local explanations into consistent global knowledge using a query-by-expert algorithm. We identified the influence of surface morphology on the colors exhibited by stainless steel 304 parts polished through the Magnetic Abrasive Finishing (MAF) process. This discovered physical knowledge was validated through confirmatory experiments and blind tests."
+abstract: "An explainable artificial intelligence approach based on consolidating the Local Interpretable and Model-agnostic Explanation (LIME) model outputs was devised to discern the influence of the surface morphology on the colors exhibited by stainless-steel 304 parts polished with a Magnetic Abrasive Finishing (MAF) process. The MAF polishing process was used to create two regions, each appearing either blue or red to the naked eye. The color distribution was microscopically heterogeneous, i.e., some red microscale patches were dispersed in blue regions, and vice versa. The surface morphology was represented in the frequency domain (using a 2D Fourier transform) to capture the harmonic surface patterns, such as the feed and lay marks from the polishing process. A Convolutional Neural Network (CNN) was employed to identify the color of the region from the frequency characteristics of the surface morphology. The CNN was able to predict the observed colors with test accuracies exceeding 99%, suggesting that the frequency characteristics of the surface morphology of the red regions are distinctly different from those of the blue regions. A LIME model was constructed around each small segment within each region of the surface to identify the frequency features that are influential for differentiating between the colors. To deal with the effect of heterogeneity, an algorithm based on the query by experts was used to reconcile the local influences and gather the global explanations of the frequency characteristics that inform the blue versus red regions. We found that the dominant morphological features in the red regions are those that capture the polishing lay patterns underlying surface structure, whereas those in the blue regions capture the non-uniform and high-frequency waveform patterns, such as those result when oxide films form due to the intense polishing conditions."
+images: 
+  - "/paper_images/Surface/image1.png"
+  - "/paper_images/Surface/image2.png"
+  - "/paper_images/Surface/image3.png"
+  - "/paper_images/Surface/image4.png"
+  - "/paper_images/Surface/image5.png"
+  - "/paper_images/Surface/image6.png"
+---

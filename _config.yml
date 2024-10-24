@@ -22,7 +22,7 @@ permalink: /:categories/:title/
 collections:
   posts:
     output: true # Enables posts to be rendered into _site folder
-    permalink: /:year/:month/:day/:title/ # URL structure for posts
+    permalink: /:year/:month/:title/ # URL structure for posts
 
   courses:
     output: true
