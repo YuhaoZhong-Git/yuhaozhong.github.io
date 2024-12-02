@@ -3,7 +3,7 @@ layout: page
 title: "News"
 permalink: /news/
 ---
-<body style="background-color: #fff6e8;">
+<body style="background-color: #fff9f0;">
 <style>
   h1 {
     display: none;
@@ -21,7 +21,7 @@ permalink: /news/
   {% for post in site.posts %}
   <li>
     <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B, %Y" }}
-    <p><i>{{ post.excerpt | strip_html }}</i></p> <!-- This displays the post excerpt -->
+    <p style="margin: 0px; color: #333;"><i>{{ post.excerpt | strip_html }}</i></p> <!-- This displays the post excerpt -->
   </li>
   {% endfor %}
 </ul>

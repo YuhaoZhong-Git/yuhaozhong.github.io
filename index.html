@@ -4,7 +4,7 @@ title: Yuhao Zhong
 weight: 1.5
 show: 1
 ---
-<body style="background-color: #fff6e8;">
+<body style="background-color: #fff9f0;">
 <style>
   h1 {
     display: none;
@@ -76,7 +76,7 @@ show: 1
   {% for post in site.posts limit: 3%}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B, %Y" }}
-      <p><i>{{ post.excerpt | strip_html }}</i></p> <!-- This displays the post excerpt -->
+      <p style="margin: 0px; color: #333;"><i>{{ post.excerpt | strip_html }}</i></p> <!-- This displays the post excerpt -->
     </li>
   {% endfor %}
 </ul>
@@ -112,9 +112,9 @@ show: 1
       {% endif %}
       <div>
         <h3 style="margin: 0;"><a href="{{ paper.links }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #0266D6;">{{ paper.title }}</a></h3>
-        <p style="margin: 5px 0; color: #555;"><strong>Authors: </strong>{{ paper.authors }}</p>
-        <p style="margin: 5px 0; color: #555;"><strong> In: </strong>{{ paper.journal }}, {{ paper.year }}</p>
-        <p style="margin: 0px; color: #555;"><strong>TLDR: </strong>{{ paper.tldr}}</p>
+        <p style="margin: 5px 0; color: #333;"><strong>Authors: </strong>{{ paper.authors }}</p>
+        <p style="margin: 5px 0; color: #333;"><strong> In: </strong>{{ paper.journal }}, {{ paper.year }}</p>
+        <p style="margin: 0px; color: #333;"><strong>TLDR: </strong>{{ paper.tldr}}</p>
       </div>
     </li>
   {% endfor %}
