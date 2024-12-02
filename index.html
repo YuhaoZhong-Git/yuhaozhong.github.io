@@ -76,7 +76,7 @@ show: 1
   {% for post in site.posts limit: 3%}
     <li>
       <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B, %Y" }}
-      <p style="margin: 0px; color: #333;"><i>{{ post.excerpt | strip_html }}</i></p> <!-- This displays the post excerpt -->
+      <p style="margin: 2px 4px; color: #444;"><i>{{ post.excerpt | strip_html }}</i></p> <!-- This displays the post excerpt -->
     </li>
   {% endfor %}
 </ul>
@@ -112,9 +112,9 @@ show: 1
       {% endif %}
       <div>
         <h3 style="margin: 0;"><a href="{{ paper.links }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #0266D6;">{{ paper.title }}</a></h3>
-        <p style="margin: 5px 0; color: #333;"><strong>Authors: </strong>{{ paper.authors }}</p>
-        <p style="margin: 5px 0; color: #333;"><strong> In: </strong>{{ paper.journal }}, {{ paper.year }}</p>
-        <p style="margin: 0px; color: #333;"><strong>TLDR: </strong>{{ paper.tldr}}</p>
+        <p style="margin: 5px 0; color: #444;"><strong>Authors: </strong>{{ paper.authors }}</p>
+        <p style="margin: 5px 0; color: #444;"><strong> In: </strong>{{ paper.journal }}, {{ paper.year }}</p>
+        <p style="margin: 0px; color: #444;"><strong>TLDR: </strong>{{ paper.tldr}}</p>
       </div>
     </li>
   {% endfor %}
