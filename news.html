@@ -1,11 +1,17 @@
 ---
-layout: default
+layout: page
 title: "News"
 permalink: /news/
 ---
+<style>
+  h1 {
+    display: none;
+  }
+</style>
+
 {% include header.html %}
 
-<h1>News</h1>
+<h2 style="font-size: 29px;">News</h2>
 <ul>
   {% for post in site.posts %}
   <li>
