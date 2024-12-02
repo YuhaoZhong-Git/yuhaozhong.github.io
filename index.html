@@ -4,10 +4,13 @@ title: Yuhao Zhong
 weight: 1.5
 show: 1
 ---
-<body style="background-color: #fdf3e1;">
+<body style="background-color: #fff6e6;">
 <style>
   h1 {
     display: none;
+  }
+  h2 {
+    border-bottom: 2px solid #681313 !important; /* Creates the line */
   }
 </style>
 
@@ -108,10 +111,10 @@ show: 1
         <img src="{{ paper.images[0] }}" alt="Paper Image" style="max-width: 150px; margin-right: 15px; border-radius: 2px;">
       {% endif %}
       <div>
-        <h3 style="margin: 0;"><a href="{{ paper.links }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: blue;">{{ paper.title }}</a></h3>
+        <h3 style="margin: 0;"><a href="{{ paper.links }}" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: rgb(41, 41, 218);">{{ paper.title }}</a></h3>
         <p style="margin: 5px 0; color: #555;"><strong>Authors: </strong>{{ paper.authors }}</p>
-        <p style="margin: 5px 0; color: #777;"><strong> In: </strong>{{ paper.journal }}, {{ paper.year }}</p>
-        <p style="margin: 0; color: #777;"><strong>TLDR: </strong>{{ paper.tldr}}</p>
+        <p style="margin: 5px 0; color: #555;"><strong> In: </strong>{{ paper.journal }}, {{ paper.year }}</p>
+        <p style="margin: 2px; color: #555;"><strong>TLDR: </strong>{{ paper.tldr}}</p>
       </div>
     </li>
   {% endfor %}
