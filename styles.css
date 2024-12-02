@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    line-height: 1.5;
+    line-height: 1;
     color: #333;
   }
   
@@ -14,34 +14,6 @@ body {
     padding: 20px;
   }
   
-  /* Profile Section */
-  section.profile {
-    display: flex;
-    align-items: center;
-    margin-bottom: 30px;
-  }
-  
-  section.profile img {
-    height: 185px;
-    border: none;
-    margin-right: 20px;
-  }
-  
-  section.profile h1 {
-    font-size: 28px;
-    color: #333;
-  }
-  
-  section.profile p {
-    margin: 5px 0;
-  }
-  
-  section.profile p a {
-    text-decoration: none;
-    color: blue;
-  }
-  
-  /* Research Areas Section */
   h2 {
     font-size: 22px;
     color: #333;
@@ -52,7 +24,7 @@ body {
   ul {
     list-style-type: disc;
     margin-left: 20px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   ul li {
