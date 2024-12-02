@@ -19,8 +19,17 @@ body {
     color: #333;
     margin-top: 30px;
     margin-bottom: 2px;
+    border-bottom: 4px solid #600c0c; /* Creates the line */
+    padding-bottom: 2px; /* Adds space between the text and the line */
+  }
+
+  h3 {
+    font-size: 20px;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 2px;
     border-bottom: 2px solid #d3d3d3; /* Creates the line */
-    padding-bottom: 4px; /* Adds space between the text and the line */
+    padding-bottom: 2px; /* Adds space between the text and the line */
   }
   
   ul {
