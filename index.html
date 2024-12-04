@@ -14,7 +14,30 @@ show: 1
   }
 </style>
 
-{% include header.html %}
+<!-- {% include header.html %} -->
+
+<header style="display: flex; justify-content: space-between; align-items: center; padding: 0px 0px;">
+  <!-- University Logo on the left -->
+  <div>
+      <img src="/images/TAMUlogo.png" alt="Logo" style="background-color: transparent; height: 76px; border: none; box-shadow: none;">
+  </div>
+
+  <!-- Navigation Links on the right -->
+  <nav>
+    <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 20px;">
+        <li><a href="/index.html" style="text-decoration: none; color: none;"></a></li>  
+        <li><a href="/index.html" style="text-decoration: none; color: #681313;">Home</a></li>
+        <li><a href="/news/" style="text-decoration: none; color: #681313;">News</a></li>
+        <!-- <li><a href="/research/" style="text-decoration: none; color: #681313;">Research</a></li> -->
+        <li><a href="https://scholar.google.com/citations?user=RsfD6hMAAAAJ&hl=en" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #681313;">Publications</a></li>
+        <li><a href="/teaching/" style="text-decoration: none; color: #681313;">Teaching</a></li>
+        <!-- <li><a href="/awards/" style="text-decoration: none; color: #681313;">Awards</a></li> -->
+         <!-- <li><a href="/people/" style="text-decoration: none; color: #681313;">People</a></li> -->
+        <li><a href="/blogs/" style="text-decoration: none; color: #681313;">Blogs</a></li>
+        <li><a href="https://www.overleaf.com/read/wvdrykkkxjyx#a54d26" target="_blank" rel="noopener noreferrer" style="text-decoration: none; color: #681313;">CV</a></li> 
+    </ul>
+  </nav>
+</header>
 
 <div class="page-content">
     <div class="wrapper">
