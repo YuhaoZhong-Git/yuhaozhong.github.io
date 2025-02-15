@@ -42,7 +42,7 @@ permalink: /news/
 <ul>
   {% for post in site.posts %}
   <li>
-    <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B, %Y" }}
+    {{ post.date | date: "%B, %Y" }} - <a href="{{ post.url }}">{{ post.title }}</a>
     <p style="margin: 4px 10px; color: #555;">{{ post.excerpt | strip_html }}</p> <!-- This displays the post excerpt -->
   </li>
   {% endfor %}
