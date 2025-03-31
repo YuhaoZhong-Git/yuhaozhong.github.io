@@ -95,7 +95,7 @@ show: 1
 <ul>
   {% for post in site.posts limit: 4%}
     <li>
-      {{ post.date | date: "%m/%Y" }}
+      {{ post.date | date: "%m/%Y" }} - 
       {% if post.nolink %}
       {{ post.title }}
       {% else %}
