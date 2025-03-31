@@ -112,14 +112,16 @@ show: 1
 <h2>Selected Papers</h2>
 <ul style="list-style: none; padding: 0;">
   {% for paper in site.papers limit: 3 %}
-    <li style="margin-bottom: 30px; display: flex; flex-direction: column; align-items: flex-start;">
-      {% if paper.images and paper.images.size > 2 %}
-        <img src="{{ paper.images[0] }}" alt="Paper Image" style="max-width: 156px; margin-right: 15px; border-radius: 2px;">
-      {% else %}
-        {% for image in paper.images %}
-          <img src="{{ image }}" alt="Paper Image" style="max-width: 156px; margin-right: 15px; border-radius: 2px;">
-        {% endfor %}
-      {% endif %}
+    <li style="margin-bottom: 30px; display: flex; align-items: flex-start;">
+      <div style="display: flex; flex-direction: column; margin-right: 10px;">
+        {% if paper.images and paper.images.size > 2 %}
+          <img src="{{ paper.images[0] }}" alt="Paper Image" style="max-width: 156px; margin-bottom: 10px; border-radius: 2px;">
+        {% else %}
+          {% for image in paper.images %}
+            <img src="{{ image }}" alt="Paper Image" style="max-width: 156px; margin-bottom: 10px; border-radius: 2px;">
+          {% endfor %}
+        {% endif %}
+      </div>
       <div>
         <h3 style="margin: 0;"><a href="{{ paper.links }}" target="_blank" rel="noopener noreferrer" style="color: #0266D6;">{{ paper.title }}</a></h3>
         <p style="margin: 5px 0; color: #555;"><strong>Authors: </strong>{{ paper.authors }}</p>
