@@ -93,35 +93,20 @@ show: 1
 
 <h2>Latest News</h2>
 <ul>
-  {% for post in site.posts limit: 3%}
+  {% for post in site.posts limit: 4%}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B, %Y" }}
+      {% if post.nolink %}
+      {{ post.title }}
+      {% else %}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      {% endif %} - {{ post.date | date: "%B, %Y" }}
       <p style="margin: 4px 10px; color: #555;">{{ post.excerpt | strip_html }}</p> <!-- This displays the post excerpt -->
     </li>
   {% endfor %}
 </ul>
 
 <a href="/news/">See all news →</a>
-
-
-<!-- <h2>Selected Publications</h2>
-<ul>
-  {% for paper in site.papers limit: 3 %}
-    <li>
-      <h3><a href="{{ paper.links }}" target="_blank" rel="noopener noreferrer">{{ paper.title }}</a></h3>
-      <p><strong>Authors:</strong> {{ paper.authors }}</p>
-      <p><strong> In:</strong> {{ paper.journal }}, {{ paper.year }}</p>
-      <p><strong>TLDR:</strong> {{ paper.tldr}}</p>
-      {% if paper.images %}
-        <div class="paper-images">
-          {% for image in paper.images %}
-            <img src="{{ image }}" style="max-width: 200px; margin-right:6px;">
-          {% endfor %}
-        </div>
-      {% endif %}
-    </li>
-  {% endfor %}
-</ul> -->
+    
 
 <h2>Selected Papers</h2>
 <ul style="list-style: none; padding: 0;">
