@@ -9,7 +9,4 @@ abstract: "An explainable artificial intelligence approach based on consolidatin
 images: 
   - "/paper_images/Surface/image1.png"
   - "/paper_images/Surface/image2.png"
-  - "/paper_images/Surface/image3.png"
-  - "/paper_images/Surface/image4.png"
-  - "/paper_images/Surface/image6.png"
 ---
