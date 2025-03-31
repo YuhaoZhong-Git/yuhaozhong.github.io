@@ -115,10 +115,10 @@ show: 1
     <li style="margin-bottom: 30px; display: flex; align-items: flex-start;">
       <div style="display: flex; flex-direction: column; margin-right: 10px;">
         {% if paper.images and paper.images.size > 2 %}
-          <img src="{{ paper.images[0] }}" alt="Paper Image" style="max-width: 156px; margin-bottom: 10px; border-radius: 2px;">
+          <img src="{{ paper.images[0] }}" alt="Paper Image" style="max-width: 156px; margin-bottom: 6px; border-radius: 2px;">
         {% else %}
           {% for image in paper.images %}
-            <img src="{{ image }}" alt="Paper Image" style="max-width: 156px; margin-bottom: 10px; border-radius: 2px;">
+            <img src="{{ image }}" alt="Paper Image" style="max-width: 156px; margin-bottom: 6px; border-radius: 2px;">
           {% endfor %}
         {% endif %}
       </div>
