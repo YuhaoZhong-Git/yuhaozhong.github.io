@@ -94,14 +94,14 @@ show: 1
 <h2>Latest News</h2>
 <ul>
   {% for post in site.posts limit: 4%}
-    <li style="margin-bottom: 2px;">
+    <li>
       {{ post.date | date: "%m/%Y" }} - 
       {% if post.nolink %}
         {{ post.title }}
       {% else %}
         <a href="{{ post.url }}">{{ post.title }}</a>
       {% endif %} 
-      <p style="margin: 4px 10px; color: #777;">{{ post.excerpt}}</p> <!-- This displays the post excerpt -->
+      <p style="margin: 4px 8px 8px 12px; color: #777;">{{ post.excerpt}}</p> <!-- This displays the post excerpt -->
     </li>
   {% endfor %}
 </ul>
