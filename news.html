@@ -3,6 +3,7 @@ layout: page
 title: "News"
 permalink: /news/
 ---
+<!-- Webpage colors -->
 <body style="background-color: #fffbf6;">
 <style>
   h1 {
@@ -44,7 +45,12 @@ permalink: /news/
 <ul>
   {% for post in site.posts %}
   <li>
-    {{ post.date | date: "%B, %Y" }} - <a href="{{ post.url }}">{{ post.title }}</a>
+    {{ post.date | date: "%B, %Y" }} -
+    {% if post.nolink %}
+      {{ post.title }}
+    {% else %}
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    {% endif %}
     <p style="margin: 4px 10px; color: #555;">{{ post.excerpt | strip_html }}</p> <!-- This displays the post excerpt -->
   </li>
   {% endfor %}
