@@ -32,4 +32,9 @@ collections:
     output: true
     permalink: /papers/:title/
 
+  people:
+    output: true
+    permalink: /people/:title/
+    # This collection can be used to store information about people, e.g., research team members or contributors.
+
 

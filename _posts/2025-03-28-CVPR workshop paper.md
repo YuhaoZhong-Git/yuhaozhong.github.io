@@ -4,6 +4,6 @@ title: "<b>Cheers! Our paper <i>\"When textures deceive: Weakly supervised indus
 date: 2025-03-28
 categories: news
 nolink: true
-excerpt: 'Congratulations, <a href="https://www.linkedin.com/in/ganatma/"> Tapan Ganatma Nakkina</a>!'
+excerpt: 'Congratulations, <a href="https://www.linkedin.com/in/ganatma/" rel="noopener noreferrer"> Tapan Ganatma Nakkina</a>!'
 ---
 
