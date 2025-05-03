@@ -45,7 +45,7 @@ permalink: /news/
 <ul>
   {% for post in site.posts %}
   <li>
-    {{ post.date | date: "%m/%Y" }} - 
+  <b>{{ post.date | date: "%m/%Y" }} - </b>
     {% if post.nolink %}
       {{ post.title }}
     {% else %}
