@@ -94,7 +94,7 @@ show: 1
 
 <h2>Latest News</h2>
 <ul>
-  {% for post in site.posts limit: 4%}
+  {% for post in site.posts limit: 6%}
     <li>
       {{ post.date | date: "%m/%Y" }} - 
       {% if post.nolink %}
@@ -112,7 +112,7 @@ show: 1
 
 <h2>Selected Papers</h2>
 <ul style="list-style: none; padding: 0;">
-  {% for paper in site.papers limit: 3 %}
+  {% for paper in site.papers limit: 4 %}
     <li style="margin-bottom: 30px; display: flex; align-items: flex-start;">
       <div style="display: flex; flex-direction: column; margin-right: 10px;">
         {% if paper.images and paper.images.size > 2 %}
