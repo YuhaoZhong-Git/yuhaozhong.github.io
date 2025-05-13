@@ -94,7 +94,7 @@ show: 1
 
 <h2>Latest News</h2>
 <ul>
-  {% for post in site.posts limit: 6%}
+  {% for post in site.posts limit: 3%}
     <li>
       <b>{{ post.date | date: "%m/%Y" }} - </b> 
       {% if post.nolink %}
