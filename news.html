@@ -41,42 +41,37 @@ permalink: /news/
 </header>
 
 
-<!-- <h2 style="font-size: 29px;">News</h2>
-<ul>
-  {% assign six_months_ago = 'now' | date: "%Y%m" | minus: 6 %}
+<h2 style="font-size: 29px;">Latest News</h2>
+<ul id="latest-news"></ul>
+
+<h2 style="font-size: 29px;">Not So New</h2>
+<ul id="old-news"></ul>
+
+<ul id="all-news" style="display:none;">
   {% for post in site.posts %}
-    {% assign post_date = post.date | date: "%Y%m" %}
-    {% if post_date >= six_months_ago %}
-      <li>
-        <b>{{ post.date | date: "%m/%Y" }} - </b>
-        {% if post.nolink %}
-          {{ post.title }}
-        {% else %}
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        {% endif %}
-        <p style="margin: 4px 8px 6px 12px; color: #777;">{{ post.excerpt }}</p>
-      </li>
-    {% endif %}
+    <li data-date="{{ post.date | date: '%Y-%m-%d' }}">
+      <b>{{ post.date | date: "%m/%Y" }} - </b>
+      {% if post.nolink %}
+        {{ post.title }}
+      {% else %}
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      {% endif %}
+      <p style="margin: 4px 8px 6px 12px; color: #777;">{{ post.excerpt }}</p>
+    </li>
   {% endfor %}
 </ul>
 
-<h2 style="font-size: 29px; margin-top: 40px;">Not So New</h2>
-<ul>
-  {% assign six_months_ago = 'now' | date: "%Y%m" | minus: 6 %}
-  {% for post in site.posts %}
-    {% assign post_date = post.date | date: "%Y%m" %}
-    {% if post_date < six_months_ago %}
-      <li>
-        <b>{{ post.date | date: "%m/%Y" }} - </b>
-        {% if post.nolink %}
-          {{ post.title }}
-        {% else %}
-          <a href="{{ post.url }}">{{ post.title }}</a>
-        {% endif %}
-        <p style="margin: 4px 8px 6px 12px; color: #777;">{{ post.excerpt }}</p>
-      </li>
-    {% endif %}
-  {% endfor %}
-</ul> -->
+<script>
+  const sixMonthsAgo = new Date();
+  sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+
+  document.querySelectorAll('#all-news li').forEach(item => {
+    const postDate = new Date(item.dataset.date);
+    const targetList = postDate >= sixMonthsAgo
+      ? document.getElementById('latest-news')
+      : document.getElementById('old-news');
+    targetList.appendChild(item.cloneNode(true));
+  });
+</script>
 
 </body>
