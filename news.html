@@ -41,21 +41,6 @@ permalink: /news/
 </header>
 
 
-<!-- <h2 style="font-size: 29px;">News</h2>
-<ul>
-  {% for post in site.posts %}
-  <li>
-  <b>{{ post.date | date: "%m/%Y" }} - </b>
-    {% if post.nolink %}
-      {{ post.title }}
-    {% else %}
-      <a href="{{ post.url }}">{{ post.title }}</a>
-    {% endif %}
-    <p style="margin: 4px 8px 6px 12px; color: #777;">{{ post.excerpt}}</p> <!-- This displays the post excerpt -->
-  <!-- </li>
-  {% endfor %}
-</ul> --> 
-
 <h2 style="font-size: 29px;">Latest News</h2>
 <ul>
   {% assign six_months_ago = 'now' | date: "%Y%m" | minus: 6 %}
