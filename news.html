@@ -41,7 +41,7 @@ permalink: /news/
 </header>
 
 
-<h2 style="font-size: 29px;">News</h2>
+<!-- <h2 style="font-size: 29px;">News</h2>
 <ul>
   {% for post in site.posts %}
   <li>
@@ -52,7 +52,45 @@ permalink: /news/
       <a href="{{ post.url }}">{{ post.title }}</a>
     {% endif %}
     <p style="margin: 4px 8px 6px 12px; color: #777;">{{ post.excerpt}}</p> <!-- This displays the post excerpt -->
-  </li>
+  <!-- </li>
+  {% endfor %}
+</ul> --> 
+
+<h2 style="font-size: 29px;">Latest News</h2>
+<ul>
+  {% assign six_months_ago = 'now' | date: "%Y%m" | minus: 6 %}
+  {% for post in site.posts %}
+    {% assign post_date = post.date | date: "%Y%m" %}
+    {% if post_date >= six_months_ago %}
+      <li>
+        <b>{{ post.date | date: "%m/%Y" }} - </b>
+        {% if post.nolink %}
+          {{ post.title }}
+        {% else %}
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        {% endif %}
+        <p style="margin: 4px 8px 6px 12px; color: #777;">{{ post.excerpt }}</p>
+      </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h2 style="font-size: 29px; margin-top: 40px;">Not So New</h2>
+<ul>
+  {% assign six_months_ago = 'now' | date: "%Y%m" | minus: 6 %}
+  {% for post in site.posts %}
+    {% assign post_date = post.date | date: "%Y%m" %}
+    {% if post_date < six_months_ago %}
+      <li>
+        <b>{{ post.date | date: "%m/%Y" }} - </b>
+        {% if post.nolink %}
+          {{ post.title }}
+        {% else %}
+          <a href="{{ post.url }}">{{ post.title }}</a>
+        {% endif %}
+        <p style="margin: 4px 8px 6px 12px; color: #777;">{{ post.excerpt }}</p>
+      </li>
+    {% endif %}
   {% endfor %}
 </ul>
 
