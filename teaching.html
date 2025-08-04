@@ -32,6 +32,27 @@ permalink: /teaching/
     font-weight: bold;
     color: #861F41;  /* VT Maroon */
   }
+
+  .collapsible summary {
+      background-color: #f0f0f0;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 19px;
+      cursor: pointer;
+      display: inline-block;
+      width: fit-content;
+    }
+
+    .collapsible .content {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease-out;
+    }
+
+    .collapsible[open] .content {
+      max-height: 1000px; /* Large enough for the content */
+      transition: max-height 0.5s ease-in;
+    }
 </style>
 
 <!-- Header -->
@@ -64,7 +85,7 @@ permalink: /teaching/
   </nav>
 </header>
 
-<hr style = "margin-bottom: 0 px;">
+<!-- <hr style = "margin-bottom: 0 px;">
 <h2 style="font-size: 29px; border-bottom: none;">Overview</h2>
 <ul>
    <li><a href="#currently-teaching">Currently Teaching</a></li>
@@ -75,7 +96,7 @@ permalink: /teaching/
     </ul>
     <li><a href="#mentoring-experience">Mentoring Experience</a></li>
 </ul>
-<hr>
+<hr> -->
 
 <h3 style="font-size: 24px;">Currently Teaching</h3>
 Stay tuned!
