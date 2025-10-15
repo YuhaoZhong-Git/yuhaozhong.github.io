@@ -4,7 +4,6 @@ title: "<b><span style=\"color: #CF4420;\">[Paper]</span> Cheers! Our paper <i>\
 date: 2025-04-01
 categories: news
 nolink: true
-hasexcerpt: true
 excerpt: "Congratulations, Tapan Ganatma Nakkina!"
 ---
 
