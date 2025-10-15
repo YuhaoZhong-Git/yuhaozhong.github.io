@@ -3,6 +3,7 @@ layout: post
 title: "<b><span style=\"color: #CF4420;\">[Award]</span> INFORMS TAMU Student Chapter has once again won the highest distinction, Summa Cum Laude!</b>"
 date: 2024-10-21
 categories: news
+hasexcerpt: true
 excerpt: "As Vice President of the INFORMS TAMU Student Chapter, I am proud to announce..."
 ---
 As Vice President of the INFORMS Student Chapter at Texas A&M University, I am proud to announce that we have once again received the highest distinction, Summa Cum Laude, at the 2024 INFORMS Annual Meeting! Gig'em!

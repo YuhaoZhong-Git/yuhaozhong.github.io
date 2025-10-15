@@ -4,5 +4,6 @@ title: "<b><span style=\"color: #CF4420;\">[Talk]</span> Dr. Zhong presented his
 date: 2025-09-19
 categories: news
 nolink: true
+hasexcerpt: true
 excerpt: "Thank Dr. G. Don Taylor for this great opportunity!"
 ---
