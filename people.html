@@ -22,6 +22,26 @@ permalink: /people/
     font-weight: bold;
     color: #861F41;  /* VT Maroon */
   }
+
+  .collapsible summary {
+      background-color: #f0f0f0;
+      padding: 10px 15px;
+      border-radius: 5px;
+      font-size: 19px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .collapsible .content {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease-out;
+    }
+
+    .collapsible[open] .content {
+      max-height: 1000px; /* Large enough for the content */
+      transition: max-height 0.5s ease-in;
+    }
   </style>
 
 <!-- Header -->
@@ -90,13 +110,15 @@ permalink: /people/
             <p>Class of 2029</p>
             <p>Research Interests: Circuits, Arduino, Marketing</p>
             <p>Hobbies: Golf, Music</p>
+            <br>
 
             <li><strong><a href = "https://www.linkedin.com/in/jonathan-michael-a77135288/" target="_blank" rel="noopener noreferrer">Jonathan Michael</a></strong></li>
             <p>Major: Industrial and Systems Engineering</p>
             <p>Class of 2026</p>
             <p>Research Interests: Machine Learning and AI</p>
             <p>Hobbies: Basketball, Fitness, Watching sports, Music production</p>
-
+            <br>
+            
             <li><strong><a href = "https://www.linkedin.com/in/shreya-selvamani-81687128a/" target="_blank" rel="noopener noreferrer">Shreya Selvamani</a></strong></li>
             <p>Major Intention: Industrial and Systems Engineering</p>
             <p>Class of 2029</p>
