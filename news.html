@@ -80,12 +80,12 @@ permalink: /news/
 </ul>
 
 <script>
-  const sixMonthsAgo = new Date();
-  sixMonthsAgo.setMonth(sixMonthsAgo.getMonth() - 6);
+  const eightMonthsAgo = new Date();
+  eightMonthsAgo.setMonth(eightMonthsAgo.getMonth() - 8);
 
   document.querySelectorAll('#all-news li').forEach(item => {
     const postDate = new Date(item.dataset.date);
-    const targetList = postDate >= sixMonthsAgo
+    const targetList = postDate >= eightMonthsAgo
       ? document.getElementById('latest-news')
       : document.getElementById('old-news');
     targetList.appendChild(item.cloneNode(true));
