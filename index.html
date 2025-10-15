@@ -114,9 +114,9 @@ show: 1
     <li>
       <b style="color: #CF4420;">{{ post.date | date: "%m/%Y" }} - </b> 
       {% if post.nolink %}
-        {{ post.title }}
+        <b>{{ post.title }}</b>
       {% else %}
-        <a href="{{ post.url }}">{{ post.title }}</a>
+        <a href="{{ post.url }}"><b>{{ post.title }}</b></a>
       {% endif %} 
         <!-- <p style="margin: 4px 8px 8px 12px; color: #777;">{{ post.excerpt}}</p>  -->
     </li>

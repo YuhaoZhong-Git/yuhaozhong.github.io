@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "<b><span style=\"color: #CF4420;\">[Award]</span> INFORMS TAMU Student Chapter has once again won the highest distinction, Summa Cum Laude!</b>"
+title: "<b><span style=\"color: #CF4420;\">[Award]</span></b> INFORMS TAMU Student Chapter has once again won the highest distinction, Summa Cum Laude!"
 date: 2024-10-21
 categories: news
 excerpt: "As Vice President of the INFORMS TAMU Student Chapter, I am proud to announce..."
