@@ -23,6 +23,12 @@ permalink: /news/
     font-weight: bold;
     color: #861F41;  /* VT Maroon */
   }
+
+  .news-list li {
+  padding-left: 120px;      /* space reserved for the date */
+  text-indent: -120px;      /* pull first line back */
+  list-style: none;         /* optional: remove default bullets */
+  }
 </style>
 
 <!-- Header -->
@@ -65,7 +71,7 @@ permalink: /news/
 <h2 style="font-size: 29px;">Not so new</h2>
 <ul id="old-news"></ul>
 
-<ul id="all-news" style="display:none;">
+<ul class="news-list" id="all-news" style="display:none;">
   {% for post in site.posts %}
     <li data-date="{{ post.date | date: '%Y-%m-%d' }}">
       <b style="color: #CF4420;">{{ post.date | date: "%m/%Y" }} - </b>
