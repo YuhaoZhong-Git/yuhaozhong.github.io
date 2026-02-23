@@ -15,7 +15,7 @@
   </div>
 
   <!-- Navigation Links on the right -->
-  <!-- <nav>
+  <nav>
     <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 20px;">
         <li><a href="/index.html" style="text-decoration: none; color: none;"></a></li>  
         <li><a href="/index.html" style="text-decoration: none; color: #861F41;">Home</a></li>
@@ -25,18 +25,5 @@
         <li><a href="/teaching/" style="text-decoration: none; color: #861F41;">Teaching</a></li>
     </ul>
   </nav>
-</header> -->
-
-    <nav class="site-nav">
-      {% assign sorted_pages = site.pages | sort:"weight" %}
-      {% for p in sorted_pages %}
-        {% if p.show %}
-          <a class="page-link{% if page.url == p.url %} active{% endif %}"
-             href="{{ p.url | relative_url }}">
-            {{ p.title }}
-          </a>
-        {% endif %}
-      {% endfor %}
-    </nav>
-
+    
 </header>
