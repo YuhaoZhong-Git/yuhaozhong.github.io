@@ -15,7 +15,7 @@
   </div>
 
   <!-- Navigation Links on the right -->
-  <nav>
+  <!-- <nav>
     <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 20px;">
         <li><a href="/index.html" style="text-decoration: none; color: none;"></a></li>  
         <li><a href="/index.html" style="text-decoration: none; color: #861F41;">Home</a></li>
@@ -24,6 +24,49 @@
         <li><a href="/people/" style="text-decoration: none; color: #861F41;">Team</a></li>
         <li><a href="/teaching/" style="text-decoration: none; color: #861F41;">Teaching</a></li>
     </ul>
-  </nav>
-    
+  </nav> -->
+
+  <nav>
+  <ul style="list-style-type: none; margin: 0; padding: 0; display: flex; justify-content: center; gap: 20px;">
+    <li>
+      <a href="{{ '/index.html' | relative_url }}"
+         class="{% if page.url == '/index.html' or page.url == '/' %}active{% endif %}"
+         style="text-decoration: none; color: #861F41;">
+        Home
+      </a>
+    </li>
+
+    <li>
+      <a href="{{ '/news/' | relative_url }}"
+         class="{% if page.url == '/news/' %}active{% endif %}"
+         style="text-decoration: none; color: #861F41;">
+        News
+      </a>
+    </li>
+
+    <li>
+      <a href="{{ '/research/' | relative_url }}"
+         class="{% if page.url == '/research/' %}active{% endif %}"
+         style="text-decoration: none; color: #861F41;">
+        Research
+      </a>
+    </li>
+
+    <li>
+      <a href="{{ '/people/' | relative_url }}"
+         class="{% if page.url == '/people/' %}active{% endif %}"
+         style="text-decoration: none; color: #861F41;">
+        Team
+      </a>
+    </li>
+
+    <li>
+      <a href="{{ '/teaching/' | relative_url }}"
+         class="{% if page.url == '/teaching/' %}active{% endif %}"
+         style="text-decoration: none; color: #861F41;">
+        Teaching
+      </a>
+    </li>
+  </ul>
+</nav>
 </header>
