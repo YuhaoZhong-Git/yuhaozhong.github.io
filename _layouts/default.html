@@ -1,14 +1,32 @@
 <!doctype html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="/assets/style.css" />
-  </head>
-  <body>
-    {% include header.html %}
-    <main>
-      {{ content }}
-    </main>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>{{ page.title }}{% if site.title %} | {{ site.title }}{% endif %}</title>
+
+  <!-- If you have a site-wide CSS file, include it here -->
+  <!-- <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"> -->
+
+  <style>
+    body { background-color: #fffbf6; }
+
+    h1 { display: none; }
+    h2 { border-bottom: 2px solid #681313 !important; }
+
+    .lab-name {
+      font-size: 16px;
+      font-weight: bold;
+      color: #861F41;
+    }
+  </style>
+</head>
+
+<body>
+  {% include header.html %}  <!-- your shared header/nav -->
+
+  {{ content }}
+
+</body>
 </html>

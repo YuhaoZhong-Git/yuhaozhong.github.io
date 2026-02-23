@@ -4,29 +4,6 @@ title: Home
 weight: 1.5
 show: 1
 ---
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
-
-<!-- Webpage colors -->
-<body style="background-color: #fffbf6;">   
-<style>
-  h1 {
-    display: none;
-  }
-   h2 {
-    border-bottom: 2px solid #681313 !important; /* Creates the line */
-  }
-
-  .lab-name {
-    font-size: 16px;
-    font-weight: bold;
-    color: #861F41;  /* VT Maroon */
-  }
-
-</style>
-
-
 <div class="page-content">
     <div class="wrapper">
       <article class="post">
@@ -81,7 +58,7 @@ show: 1
 
 <h2>Latest News</h2>
 <ul style="font-size: 18px">
-  {% for post in site.posts limit: 5%}
+  {% for post in site.posts limit: 5 %}
     <li style="margin-bottom:2px;">
       <b style="color: #CF4420;">{{ post.date | date: "%m/%Y" }} - </b> 
       {% if post.nolink %}

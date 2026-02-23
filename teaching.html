@@ -3,28 +3,14 @@ layout: default
 title: "Teaching"
 permalink: /teaching/
 ---
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 
-<body style="background-color: #fffbf6;">
 <style>
-  h1 {
-    display: none;
-  }
+  /* If these are already global in default.html, remove duplicates here */
+  body { background-color: #fffbf6; }
 
-  h2 {
-    border-bottom: 2px solid #681313 !important; /* Creates the line */
-  }
+  h1 { display: none; }
 
-  /* h3 {
-  font-size: 20px;
-  color: #333;
-  margin-top: 30px;
-  margin-bottom: 2px;
-  border-bottom: 1.5px solid #681313; 
-  padding-bottom: 2px; Adds space between the text and the line
-  } */
+  h2 { border-bottom: 2px solid #681313 !important; }
 
   .lab-name {
     font-size: 16px;
@@ -33,139 +19,136 @@ permalink: /teaching/
   }
 
   .collapsible summary {
-      background-color: #f0f0f0;
-      padding: 10px 15px;
-      border-radius: 5px;
-      font-size: 16px;
-      cursor: pointer;
-    }
+    background-color: #f0f0f0;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
 
-    .collapsible .content {
-      overflow: hidden;
-      max-height: 0;
-      transition: max-height 0.4s ease-out;
-    }
+  .collapsible .content {
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.4s ease-out;
+  }
 
-    .collapsible[open] .content {
-      max-height: 1000px; /* Large enough for the content */
-      transition: max-height 0.5s ease-in;
-    }
+  .collapsible[open] .content {
+    max-height: 1000px;
+    transition: max-height 0.5s ease-in;
+  }
 </style>
 
-<!-- <hr style = "margin-bottom: 0 px;">
-<h2 style="font-size: 29px; border-bottom: none;">Overview</h2>
-<ul>
-   <li><a href="#currently-teaching">Currently Teaching</a></li>
-    <li><a href="#teaching-experience">Teaching Experience</a></li>
-    <ul>
-        <li><a href="#instructor">Instructor</a></li>
-        <li><a href="#teaching-assistant">Teaching Assistant</a></li>
-    </ul>
-    <li><a href="#mentoring-experience">Mentoring Experience</a></li>
-</ul>
-<hr> -->
-
 <h2 style="font-size: 29px;">Currently Teaching</h2>
-  <div class="content">
-      <ul>
-        <li><strong><a href = "/courses/ise-3204/">ISE 3204: Manufacturing Processes (Fall 2025)</a></strong></li>
-        <p>Textbook: <a href = "https://www.wiley.com/en-us/Introduction+to+Manufacturing+Processes%2C+1st+Edition-p-9780470632284" target="_blank" rel="noopener noreferrer">Introduction to Manufacturing Processes (2011) by Mikell P. Goover</a>
-        </p>     
-      </ul>
-  </div>
+<div class="content">
+  <ul>
+    <li>
+      <strong>
+        <a href="{{ '/courses/ise-3204/' | relative_url }}">ISE 3204: Manufacturing Processes (Fall 2025)</a>
+      </strong>
+    </li>
+    <p>
+      Textbook:
+      <a href="https://www.wiley.com/en-us/Introduction+to+Manufacturing+Processes%2C+1st+Edition-p-9780470632284"
+         target="_blank" rel="noopener noreferrer">
+        Introduction to Manufacturing Processes (2011) by Mikell P. Goover
+      </a>
+    </p>
+  </ul>
+</div>
 
 <h2 style="font-size: 29px;">Previously Taught</h2>
 <ul>
-  <li style = "font-size: 16px; font-weight: bold;">Texas A&M University</li>
+  <li style="font-size: 16px; font-weight: bold;">Texas A&amp;M University</li>
 </ul>
+
 <details class="collapsible">
-      <summary>Instructor</summary>
-      <br>
-      <div class="content">
-        <ul>
-            <li><strong><a href = "/courses/isen-414/">ISEN 414: Total Quality Engineering (Spring 2024) – 39 undergraduate students</a></strong></li>
+  <summary>Instructor</summary>
+  <br>
+  <div class="content">
+    <ul>
+      <li>
+        <strong>
+          <a href="{{ '/courses/isen-414/' | relative_url }}">ISEN 414: Total Quality Engineering (Spring 2024) – 39 undergraduate students</a>
+        </strong>
+      </li>
 
-        <p>This class consisted of: 27 lectures, 9 laboratories, 25 quizzes, 7 homework assignments, 2 exams, and 1 final project.</p>
+      <p>This class consisted of: 27 lectures, 9 laboratories, 25 quizzes, 7 homework assignments, 2 exams, and 1 final project.</p>
 
-        <p>Course Evaluation (selected student feedback):</p>
-        <ul>
-            <li>"Great job for first time teaching! Very understanding, fair professor. Homework assignments were challenging but the professor and TA would answer my questions promptly."</li>
-            <li>"I personally enjoyed taking this course and it definitely helped me understand quality engineering. The only thing I would critique about this course are the lecture slides that the professor makes, where there are repeated concepts in every lecture that is posted. This makes it slightly more difficult to navigate through the slides to study. Other than that, I felt like Mr. Zhong did a good job teaching this course, and his exams covered the topics in his lectures well so us students knew what to expect."</li>
-            <li>"Very interesting course, one of my favorite ISEN courses (information-wise)."</li>
-        </ul>
-        </ul>
-      </div>
+      <p>Course Evaluation (selected student feedback):</p>
+      <ul>
+        <li>"Great job for first time teaching! Very understanding, fair professor. Homework assignments were challenging but the professor and TA would answer my questions promptly."</li>
+        <li>"I personally enjoyed taking this course and it definitely helped me understand quality engineering. The only thing I would critique about this course are the lecture slides that the professor makes, where there are repeated concepts in every lecture that is posted. This makes it slightly more difficult to navigate through the slides to study. Other than that, I felt like Mr. Zhong did a good job teaching this course, and his exams covered the topics in his lectures well so us students knew what to expect."</li>
+        <li>"Very interesting course, one of my favorite ISEN courses (information-wise)."</li>
+      </ul>
+    </ul>
+  </div>
 </details>
 
-
 <details class="collapsible">
-      <summary>Teaching Assistant</summary>
-      <br>
-      <div class="content">
-        <ul>
-            <li><strong><a href = "/courses/isen-350/">ISEN 350: Quality Engineering (Spring 2025) – 70 undergraduate students</a></strong></li>
-            <li><strong><a href = "/courses/isen-613/">ISEN 613: Engineering Data Analysis (Fall 2022) – 93 graduate students</a></strong></li>
-            <li><strong><a href = "/courses/isen-230/">ISEN 230: Informatics for Industrial Engineers (Fall 2020) – 74 undergraduate students</a></strong></li>
-        </ul>
-      </div>
+  <summary>Teaching Assistant</summary>
+  <br>
+  <div class="content">
+    <ul>
+      <li><strong><a href="{{ '/courses/isen-350/' | relative_url }}">ISEN 350: Quality Engineering (Spring 2025) – 70 undergraduate students</a></strong></li>
+      <li><strong><a href="{{ '/courses/isen-613/' | relative_url }}">ISEN 613: Engineering Data Analysis (Fall 2022) – 93 graduate students</a></strong></li>
+      <li><strong><a href="{{ '/courses/isen-230/' | relative_url }}">ISEN 230: Informatics for Industrial Engineers (Fall 2020) – 74 undergraduate students</a></strong></li>
+    </ul>
+  </div>
 </details>
 
-
 <details class="collapsible">
-      <summary>Grader</summary>
-      <br>
-      <div class="content">
-        <ul>
-            <li><strong><a href = "/courses/isen-660/">ISEN 660: Quantitative Risk Analysis (Fall 2019) – 27 graduate students</a></strong></li>
-        </ul>
-      </div>
+  <summary>Grader</summary>
+  <br>
+  <div class="content">
+    <ul>
+      <li><strong><a href="{{ '/courses/isen-660/' | relative_url }}">ISEN 660: Quantitative Risk Analysis (Fall 2019) – 27 graduate students</a></strong></li>
+    </ul>
+  </div>
 </details>
 
 <h2 style="font-size: 29px;">Mentoring Experience</h2>
 <ul>
-  <li style = "font-size: 16px;font-weight: bold;">Texas A&M University</li>
+  <li style="font-size: 16px; font-weight: bold;">Texas A&amp;M University</li>
 </ul>
+
 <div>
-<details class="collapsible">
-      <summary>Ph.D. Students in Prof. Satish Bukkapatnam's Group (Oct 2024 - August 2025)</summary>
-      <br>
-      <div class="content">
-        <ul>
-            <li><a href = "https://www.linkedin.com/in/shashankgalla/" target="_blank" rel="noopener noreferrer">Shashank Galla</a>  <br>
-            Topics: Kernel density estimation for quality assurance; Reinforcement learning for cybersecurity.</li>
-        </ul>
-      </div>
-</details>
+  <details class="collapsible">
+    <summary>Ph.D. Students in Prof. Satish Bukkapatnam's Group (Oct 2024 - August 2025)</summary>
+    <br>
+    <div class="content">
+      <ul>
+        <li>
+          <a href="https://www.linkedin.com/in/shashankgalla/" target="_blank" rel="noopener noreferrer">Shashank Galla</a><br>
+          Topics: Kernel density estimation for quality assurance; Reinforcement learning for cybersecurity.
+        </li>
+      </ul>
+    </div>
+  </details>
 
-
-<details class="collapsible">
-      <summary>TAMU X-Grants Program (Feb 2021 - August 2025)</summary>
-      <br>
-      <div class="content"></div>
+  <details class="collapsible">
+    <summary>TAMU X-Grants Program (Feb 2021 - August 2025)</summary>
+    <br>
+    <div class="content">
       Mentored 4 students, including 1 master's thesis, on data-driven seizure prognosis using intracranial electroencephalography (iEEG):
       <br>
-        <ul>
-        <li><a href = "https://www.linkedin.com/in/tianhaopeng/" target="_blank" rel="noopener noreferrer">Haopeng Tian</a></li>
-        <li><a href = "https://www.linkedin.com/in/sourabh-shinde-121434171/" target="_blank" rel="noopener noreferrer">Sourabh Shinde</a></li>
-        <li><a href = "https://www.linkedin.com/in/tanay-saboo/" target="_blank" rel="noopener noreferrer">Tanay Saboo</a></li>
-        <li><a href = "https://www.linkedin.com/in/jason-rusli-9b241816a/" target="_blank" rel="noopener noreferrer">Jason Rusli</a></li>
-        </ul>
-      </div>
-</details>
+      <ul>
+        <li><a href="https://www.linkedin.com/in/tianhaopeng/" target="_blank" rel="noopener noreferrer">Haopeng Tian</a></li>
+        <li><a href="https://www.linkedin.com/in/sourabh-shinde-121434171/" target="_blank" rel="noopener noreferrer">Sourabh Shinde</a></li>
+        <li><a href="https://www.linkedin.com/in/tanay-saboo/" target="_blank" rel="noopener noreferrer">Tanay Saboo</a></li>
+        <li><a href="https://www.linkedin.com/in/jason-rusli-9b241816a/" target="_blank" rel="noopener noreferrer">Jason Rusli</a></li>
+      </ul>
+    </div>
+  </details>
 
-
-<details class="collapsible">
-      <summary>NSF-Research Experiences for Undergraduates (June 2021 - Aug 2021)</summary>
-      <br>
-      <div class="content"></div>
+  <details class="collapsible">
+    <summary>NSF-Research Experiences for Undergraduates (June 2021 - Aug 2021)</summary>
+    <br>
+    <div class="content">
       Mentored 1 student on developing a wearable device for Photoplethysmography (PPG) measurement and blood oxygen monitoring:
       <br>
       <ul>
-        <li><a href = "https://www.linkedin.com/in/sayed-afnaan-ahmed/" target="_blank" rel="noopener noreferrer">Sayed Afnaan Ahmed</a></li>
+        <li><a href="https://www.linkedin.com/in/sayed-afnaan-ahmed/" target="_blank" rel="noopener noreferrer">Sayed Afnaan Ahmed</a></li>
       </ul>
-      </div>
-</details>
-
+    </div>
+  </details>
 </div>
-
-</body>

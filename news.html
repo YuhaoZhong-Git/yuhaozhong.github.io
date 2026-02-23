@@ -3,34 +3,24 @@ layout: default
 title: "News"
 permalink: /news/
 ---
-<!-- Webpage colors -->
- <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
 
-<body style="background-color: #fffbf6;">
 <style>
-  h1 {
-    display: none;
-  }
 
-  h2 {
-    border-bottom: 2px solid #681313 !important; /* Creates the line */
-  }
-  
+  h1 { display: none; }
+  h2 { border-bottom: 2px solid #681313 !important; }
+
   .lab-name {
     font-size: 16px;
     font-weight: bold;
-    color: #861F41;  /* VT Maroon */
+    color: #861F41;
   }
 
   .news-list li {
-  padding-left: 120px;      /* space reserved for the date */
-  text-indent: -120px;      /* pull first line back */
-  list-style: none;         /* optional: remove default bullets */
+    padding-left: 120px;
+    text-indent: -120px;
+    list-style: none;
   }
 </style>
-
 
 <h2 style="font-size: 29px;">News</h2>
 <ul id="latest-news"></ul>
@@ -45,24 +35,22 @@ permalink: /news/
       {% if post.nolink %}
         <b>{{ post.title }}</b>
       {% else %}
-        <a href="{{ post.url }}"><b>{{ post.title }}</b></a>
+        <a href="{{ post.url | relative_url }}"><b>{{ post.title }}</b></a>
       {% endif %}
-        <p style="margin: 4px 8px 6px 12px; color: #777;">{{ post.excerpt }}</p>
+      <p style="margin: 4px 8px 6px 12px; color: #777;">{{ post.excerpt }}</p>
     </li>
   {% endfor %}
 </ul>
 
 <script>
-  const eightMonthsAgo = new Date();
-  eightMonthsAgo.setMonth(eightMonthsAgo.getMonth() - 8);
+  const cutoff = new Date();
+  cutoff.setMonth(cutoff.getMonth() - 8);
 
   document.querySelectorAll('#all-news li').forEach(item => {
     const postDate = new Date(item.dataset.date);
-    const targetList = postDate >= eightMonthsAgo
+    const targetList = postDate >= cutoff
       ? document.getElementById('latest-news')
       : document.getElementById('old-news');
     targetList.appendChild(item.cloneNode(true));
   });
 </script>
-
-</body>
