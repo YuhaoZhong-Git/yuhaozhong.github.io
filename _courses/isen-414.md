@@ -11,3 +11,5 @@ Principles of total quality engineering; total quality management philosophy, en
 <h2>Instructor</h2>
 Yuhao Zhong (me)
 
+<h2>Teaching Assistant</h2>
+<a href = "https://www.linkedin.com/in/pranod-mane/" target="_blank" rel="noopener noreferrer">Mr. Pranod Mane</a> 
